@@ -45,7 +45,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     final position = _scrollController.position;
     final maxScrollExtend = position.maxScrollExtent;
     final pixel = position.pixels + 40;
-    final hasPaginate = pixel >= maxScrollExtend && _hasNextPage;
+    final hasPaginate = pixel > maxScrollExtend && _hasNextPage;
     if (hasPaginate && !state.pokemonLoading) {
      
 
