@@ -1,4 +1,5 @@
 import 'package:api_bloc_pokemon/view/screen/home.dart';
+import 'package:api_bloc_pokemon/view/screen/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const Homee());
+          home: const HomePage());
     
   }
 }

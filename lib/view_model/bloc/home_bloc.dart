@@ -36,6 +36,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   ScrollController get scrollController => _scrollController;
    get hasNextPage => _hasNextPage;
 
+   get  offset => _offset;
+
 
   void init() {
     _scrollController = ScrollController()..addListener(_listener);
